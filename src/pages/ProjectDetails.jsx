@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import {createClient} from 'contentful';
 import {documentToReactComponents} from '@contentful/rich-text-react-renderer';
 import { BLOCKS, MARKS } from '@contentful/rich-text-types';
@@ -148,9 +148,9 @@ export default function ProjectDetails() {
                                 </div>
 
                                 <div className="backLink">
-                                    <a href="/projects">
+                                    <Link to="/projects">
                                         👈 Back to Projects
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
