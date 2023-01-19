@@ -1,28 +1,37 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function Nav({getNavInput}) {
     return (
         <div className="nav__container">
             <ul className="nav__bar">
                 < li className="nav__item">
-                    <a href="/projects">
+                    {/* <a href="/projects">
                         [P] Projects
-                    </a>
+                    </a> */}
+                    <Link to="/projects"> [P] Projects </Link>
+                    
                 </li>
                 <li className="nav__item">
-                    <a href="/resume">
+                    {/* <a href="/resume">
                         [R] Resume
-                    </a>
+                    </a> */}
+
+                    <Link to="/resume"> [R] Resume </Link>
                 </li>
                 <li className="nav__item">
-                    <a href="/github">
+                    {/* <a href="/github">
                         [G] Github
-                    </a>
+                    </a> */}
+
+                    <Link to="/github"> [G] Github </Link>
                 </li>
                 <li className="nav__item">
-                    <a href="/blog">
+                    {/* <a href="/blog">
                         [B] Blog (from my time as a student)
-                    </a>
+                    </a> */}
+
+                    <Link to="/blog"> [B] Blog </Link>
                 </li>
             </ul>
 

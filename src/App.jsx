@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { Routes, Route} from "react-router-dom";
 
 import Home from './pages';
 import Blog from './pages/blog';
@@ -13,16 +13,14 @@ import './styles/main.scss';
 
 function App() {
   return (
-    <Router>
-        <Routes>
+    <Routes>
             <Route exact path='/' element={<Home />} />
             <Route path='/blog' element={<Blog />} />
             <Route path='/github' element={<Github />} />
             <Route path='/projects' element={<Projects />} />
             <Route path="/projects/:slug" element={<ProjectDetails />} />
             <Route path='/resume' element={<Resume />} />
-        </Routes>
-    </Router>
+    </Routes>
   );
 }
 

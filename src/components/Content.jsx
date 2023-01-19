@@ -64,13 +64,13 @@ const Content = ({navResult, listResult, defaultResult}) => {
                 <div className="defaultContent">
                     <h2>What have I been up to?</h2>
                         <div className="contentList">
-                            <div class="listItem">
+                            <div className="listItem">
                                 <p><strong>Bouldering.</strong> (along with what feels like everyone else &#128514;) I miss playing a sport within a tight-knit community, so I've been trying to go more consistently.</p>
                             </div>
-                            <div class="listItem pushRight">
+                            <div className="listItem pushRight">
                                 <p><strong>Nurturing more energy and space for the people I love and the things I advocate for.</strong></p> 
                             </div>
-                            <div class="listItem">
+                            <div className="listItem">
                                 <p><strong>Chobani® Flip® Greek Yogurt.</strong> My favorite flavor has been Key Lime Crumble. I acknowledge that the image below does not depict that flavor.</p>
                                 <img src={chobani} className="contentImg" width="30%" alt="Coffee Brownie Bliss flavored Chobani Yogurt." />
                             </div>
