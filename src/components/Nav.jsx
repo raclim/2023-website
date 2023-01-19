@@ -6,31 +6,15 @@ export default function Nav({getNavInput}) {
         <div className="nav__container">
             <ul className="nav__bar">
                 < li className="nav__item">
-                    {/* <a href="/projects">
-                        [P] Projects
-                    </a> */}
                     <Link to="/projects"> [P] Projects </Link>
-                    
                 </li>
                 <li className="nav__item">
-                    {/* <a href="/resume">
-                        [R] Resume
-                    </a> */}
-
                     <Link to="/resume"> [R] Resume </Link>
                 </li>
                 <li className="nav__item">
-                    {/* <a href="/github">
-                        [G] Github
-                    </a> */}
-
                     <Link to="/github"> [G] Github </Link>
                 </li>
                 <li className="nav__item">
-                    {/* <a href="/blog">
-                        [B] Blog (from my time as a student)
-                    </a> */}
-
                     <Link to="/blog"> [B] Blog </Link>
                 </li>
             </ul>

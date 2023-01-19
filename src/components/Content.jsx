@@ -1,5 +1,6 @@
 import navTitles from "../statics/navTitles";
 import navList from '../statics/navList';
+import { Link } from "react-router-dom";
 
 import chobani from '../chobani.png';
 
@@ -10,19 +11,19 @@ const Content = ({navResult, listResult, defaultResult}) => {
 
     if (navResult === navList.PROJECTS || (!navResult && defaultResult === navList.PROJECTS)) {
         const allProjectsHolder = navTitles.allProjects.map(project => {
-            return <div key={project.slug} className="projectItem"><a href={createProjectURL(project.slug)}>{project.title}</a><img src={'https:' + project.thumbnail} width={80} height={80} alt=""></img><p>[{project.tags}]</p></div>
+            return <div key={project.slug} className="projectItem"><Link to={createProjectURL(project.slug)}>{project.title}</Link><img src={'https:' + project.thumbnail} width={80} height={80} alt=""></img><p>[{project.tags}]</p></div>
         });
 
         const webProjectsHolder = navTitles.webProjects.map(project => {
-            return <div key={project.slug} className="projectItem"><a href={createProjectURL(project.slug)}>{project.title}</a><img src={'https:' + project.thumbnail} width={80} height={80} alt=""></img><p>[{project.tags}]</p></div>
+            return <div key={project.slug} className="projectItem"><Link to={createProjectURL(project.slug)}>{project.title}</Link><img src={'https:' + project.thumbnail} width={80} height={80} alt=""></img><p>[{project.tags}]</p></div>
         });
 
         const craftProjectsHolder = navTitles.craftProjects.map(project => {
-            return <div key={project.slug} className="projectItem"><a href={createProjectURL(project.slug)}>{project.title}</a><img src={'https:' + project.thumbnail} width={80} height={80} alt=""></img><p>[{project.tags}]</p></div>
+            return <div key={project.slug} className="projectItem"><Link to={createProjectURL(project.slug)}>{project.title}</Link><img src={'https:' + project.thumbnail} width={80} height={80} alt=""></img><p>[{project.tags}]</p></div>
         });
 
         const hybridProjectsHolder = navTitles.hybridProjects.map(project => {
-            return <div key={project.slug} className="projectItem"><a href={createProjectURL(project.slug)}>{project.title}</a><img src={'https:' + project.thumbnail} width={80} height={80} alt=""></img><p>[{project.tags}]</p></div>
+            return <div key={project.slug} className="projectItem"><Link to={createProjectURL(project.slug)}>{project.title}</Link><img src={'https:' + project.thumbnail} width={80} height={80} alt=""></img><p>[{project.tags}]</p></div>
         });
 
         if (listResult === "web") {
