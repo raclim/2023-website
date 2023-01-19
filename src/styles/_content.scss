@@ -1,0 +1,124 @@
+.content {
+  .projectContainer {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    .projectItem {
+      display: flex;
+      flex-direction: column;
+      margin: 0.3rem;
+      padding: 1rem;
+      width: 8rem;
+
+      a {
+        font-size: 0.9rem;
+        text-decoration: underline dotted;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      a:hover, 
+      a:active,
+      a:focus {
+        background-color: yellow;
+        color: black;
+      }
+
+      p {
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .defaultContent {
+    padding: 1rem;
+
+    .contentList {
+      padding-left: 5rem;
+      font-size: 0.8rem;
+      // display: flex;
+
+      .listItem {
+        margin: 1rem;
+        width: 40%;
+        padding: 1.2rem;
+        border-radius: 4rem;
+        border: 0.1rem solid $main-green;
+        box-shadow: 10px 7px $main-green;
+      }
+
+      .pushRight {
+        margin-left: 40%;
+      }
+
+      .contentImg {
+        margin-left: 50%;
+      }
+    }
+  }
+}
+
+.projectPage {
+  .projectTitle {
+    h1 {
+      font-weight: 400;
+      padding-bottom: 0.6rem;
+      border-bottom: dotted;
+      border-color: #fff;
+      border-width: 0.1rem;
+      width: 99%;
+    }
+
+    padding: 0 0 1rem 1rem;
+    margin: 0 10%;
+    width: 80%;
+  }
+
+  .richText {
+    margin: 0 20%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      padding: 2rem;
+      // border: 0.1rem solid black;
+      // box-shadow: 5px 5px black;
+    }
+    
+    img {
+      width: 50%;
+      height: 50%;
+      margin: 3% 20% 3% 20%;
+      border: 0.1rem solid $main-green;
+      box-shadow: 5px 5px $main-green;
+    }
+
+    a {
+      text-decoration: underline dotted;
+      font-weight: bold;
+
+      &:hover, &:focus, &:active {
+        background-color: $main-green;
+        color: #fff;
+      }
+    }
+  }
+
+  .backLink {
+    margin: 1.5rem 1rem;
+    a {
+      text-decoration: underline dotted;
+
+      &:hover, &:focus, &:active {
+        font-weight: bold;
+        background-color: $main-green;
+        color: white;
+      }
+    }
+  }
+}
